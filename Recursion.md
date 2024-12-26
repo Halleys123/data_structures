@@ -11,3 +11,11 @@
 - It is important to have a base case to stop the recursion.
 
 ![Infinite Recursion](./images/infinite_recursion_light.svg)
+
+## Stack Overflow
+
+- Stack is a memory area that stores the function call.
+
+Stack overflow occurs when the stack is full and there is no space to store the function call.
+
+![Stack Overflow](./images/stack_overflow_light.svg)
