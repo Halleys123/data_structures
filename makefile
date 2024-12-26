@@ -1,3 +1,15 @@
+# ? Windows: makefile
+# To include a folder in the path, use the -I flag
+# To include a library in the path, use the -L flag
+# ? To use dynamic libraries, put the .dll files in the same folder as the .exe file 
+# To link a library, use the -l flag (without the lib prefix and the .dll extension)
+# ? Static libraries can be linked by putting the .lib files in the lib folder
+# To add .lib files, use the -l flag (without the lib prefix and the .lib extension)
+# To compile a file, use the -c flag that will generate a .o file
+# To link the .o files, use the -o flag
+
+# To compile the main file, use the following command:
+
 main:
-	g++ -o main main.cpp
+	g++ main.cpp ./source/recursion/print_name_5_times.cpp -o main.exe -I./source/recursion
 	

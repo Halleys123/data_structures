@@ -1,0 +1,11 @@
+{
+  "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**",
+    "${workspaceFolder}/source/**",
+    "${workspaceFolder}/source/recursion/**",
+    "C:\\msys64\\mingw64\\include",
+    "C:\\msys64\\ucrt64\\include",
+    "C:\\msys64\\mingw64\\x86_64-w64-mingw32\\include"
+  ]
+}
