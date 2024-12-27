@@ -18,10 +18,17 @@ f0 = main.cpp
 f1 = print_name_5_times.cpp
 # f2 = print_linearly_1_to_N.cpp
 f2 = print_to.cpp
+f3 = print_to_backtrack.cpp
 
 # File paths list
-files = $(r_f)/$(f1) $(r_f)/$(f2)
+files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3)
 
 # commands
 main: 
-	g++ main.cpp $(files) -o main.exe -I$(r_f)
+	g++ main.cpp $(files) -o main.exe -I$(r_f) -L./lib -lsign
+
+# building static libary from source/other/sign.cpp and sign.h
+build:
+	g++ -c ./source/other/sign.cpp -o ./source/other/sign.o
+	ar rcs ./lib/libsign.a ./source/other/sign.o
+	

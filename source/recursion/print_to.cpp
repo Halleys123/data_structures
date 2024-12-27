@@ -1,12 +1,6 @@
 #include "./print_to.h"
+#include "../other/sign.h"
 #include <iostream>
-
-int sign(int from, int to)
-{
-    if (from == to)
-        return 0;
-    return to - from > 0 ? 1 : -1;
-}
 
 void print_to(int current, int to, int sign)
 {
