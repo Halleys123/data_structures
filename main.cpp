@@ -8,6 +8,6 @@ using namespace std;
 int main()
 {
     cout << "Main Running" << endl;
-    print_to_backtrack(10, 1);
+    print_to_backtrack(10, 3);
     return 0;
 }

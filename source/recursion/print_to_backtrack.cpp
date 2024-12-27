@@ -7,22 +7,22 @@ void print_to_backtrack(int current, int to, int sign)
     if (sign > 0)
     {
         std::cout << current << std::endl;
-        if (current > to)
+        if (current >= to)
+        {
+            std::cout << "Exiting" << std::endl;
+            return;
+        }
+    }
+    if (sign < 0)
+    {
+        std::cout << current << std::endl;
+        if (current <= to)
         {
             std::cout << "Exiting" << std::endl;
             return;
         }
     }
     print_to_backtrack(current + sign, to, sign);
-    if (sign < 0)
-    {
-        std::cout << current << std::endl;
-        if (current < to)
-        {
-            std::cout << "Exiting" << std::endl;
-            return;
-        }
-    }
 }
 
 /**
