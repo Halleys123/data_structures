@@ -26,12 +26,13 @@ f7 = is_palindrome.cpp
 # files in multiple_recursion folder
 s1 = fibonacci.cpp
 s2 = print_subsequence.cpp
+s3 = subsequence_with_sum_k.cpp
 
 # File paths list
 files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3) $(r_f)/$(f4) $(r_f)/$(f5) $(r_f)/$(f6) $(r_f)/$(f7)
 
 # adding more files to the list
-files += $(mr_f)/$(s1) $(mr_f)/$(s2)
+files += $(mr_f)/$(s1) $(mr_f)/$(s2) $(mr_f)/$(s3)
 
 # commands
 main: 

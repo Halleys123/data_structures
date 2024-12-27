@@ -12,6 +12,7 @@
 
 #include "source/multiple_recursion/fibonacci.h"
 #include "source/multiple_recursion/print_subsequence.h"
+#include "source/multiple_recursion/subsequence_with_sum_k.h"
 
 using namespace std;
 
@@ -40,7 +41,13 @@ int main()
     array[3] = 4;
     array[4] = 5;
 
-    print_subsequence(array, size);
+    // cout << "Subsequence of above array" << endl;
+    // print_subsequence(array, size);
+
+    cout << "---------------------------------" << endl;
+    cout << "Subsequence of above array with 5 as sum" << endl;
+    cout << subsequence_with_sum_k(array, size, 5) << " subsequence with required sum are present." << endl;
+    cout << "---------------------------------" << endl;
 
     array_print(array, size);
     reverse_array(array, 1, size);
