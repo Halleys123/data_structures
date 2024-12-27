@@ -54,7 +54,7 @@ int main()
     array_print(array, size);
 
     int sum = 0;
-    int fibonacci_index = 5;
+    int fibonacci_index = 30;
 
     parameterized_sum_of_n(10, sum);
     cout << "Parameter Sum: " << sum << endl;
