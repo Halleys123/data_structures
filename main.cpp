@@ -11,6 +11,7 @@ int main()
     int sum = 0;
     cout << "Main Running" << endl;
     parameterized_sum_of_n(10, sum);
-    cout << "Sum: " << sum << endl;
+    cout << "Parameter Sum: " << sum << endl;
+    cout << "Functional Sum: " << functional_sum_of_n(10) << endl;
     return 0;
 }
