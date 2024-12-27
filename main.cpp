@@ -5,6 +5,7 @@
 #include "source/recursion/print_to_backtrack.h"
 #include "source/recursion/factorial.h"
 #include "source/recursion/reverse_array.h"
+#include "source/recursion/is_palindrome.h"
 
 using namespace std;
 
@@ -23,6 +24,8 @@ int main()
 {
     cout << "Main Running" << endl;
 
+    string str = "madam";
+
     int size = 5;
     int *array = new int[size];
     array[0] = 1;
@@ -32,7 +35,7 @@ int main()
     array[4] = 5;
 
     array_print(array, size);
-    reverse_array(array, size);
+    reverse_array(array, 1, size);
     array_print(array, size);
 
     int sum = 0;
@@ -42,7 +45,7 @@ int main()
     cout << "Functional Sum: " << functional_sum_of_n(10) << endl;
     cout << "Factorial: " << factorial(3) << endl;
     cout << "Factorial: " << factorial(-1) << endl;
-
+    printf("%s is %s palindrome", str.c_str(), is_palindrome(str) ? "a" : "not");
     delete[] array;
     return 0;
 }

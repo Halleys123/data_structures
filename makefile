@@ -16,15 +16,15 @@ r_f = ./source/recursion
 # Files
 f0 = main.cpp
 f1 = print_name_5_times.cpp
-# f2 = print_linearly_1_to_N.cpp
 f2 = print_to.cpp
 f3 = print_to_backtrack.cpp
 f4 = sum_of_n_numbers.cpp
 f5 = factorial.cpp
 f6 = reverse_array.cpp
+f7 = is_palindrome.cpp
 
 # File paths list
-files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3) $(r_f)/$(f4) $(r_f)/$(f5) $(r_f)/$(f6)
+files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3) $(r_f)/$(f4) $(r_f)/$(f5) $(r_f)/$(f6) $(r_f)/$(f7)
 
 # commands
 main: 

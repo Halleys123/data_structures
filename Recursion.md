@@ -31,3 +31,20 @@ Stack overflow occurs when the stack is full and there is no space to store the 
 - **Parameterised Recursion**: The function takes one or more parameters. The parameters are used to calculate the answer.
 
 - **Functional Recursion**: The function does not take any parameters. The function itself returns the answer.
+
+Example - Checking if string is palindrome
+
+```cpp
+
+bool is_palindrome(std::string str, int i)
+{
+    if (i >= str.length() / 2)
+        return true;
+
+    if (str[i] == str[str.length() - i - 1])
+        return is_palindrome(str, i + 1);
+    else
+        return false;
+}
+
+```

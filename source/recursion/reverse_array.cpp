@@ -19,17 +19,37 @@
 //     array[i] = temp;
 // }
 
-void reverse_array(int *array, int i, int size)
+/**
+ * @brief Recursively reverses the elements of an array.
+ *
+ * This function swaps the elements at the current index `i` and the corresponding
+ * index from the end of the array, then recursively calls itself to reverse the
+ * next pair of elements.
+ *
+ * @param array Pointer to the array to be reversed.
+ * @param from Current index to be swapped.
+ * @param size Total size of the array.
+ */
+void reverse_array(int *array, int fromIndex, int size)
 {
-    if (i > size - i - 1)
+    if (fromIndex > size - fromIndex - 1)
     {
         return;
     }
-    int temp = array[size - i - 1];
-    array[size - i - 1] = array[i];
-    array[i] = temp;
+    int temp = array[size - fromIndex - 1];
+    array[size - fromIndex - 1] = array[fromIndex];
+    array[fromIndex] = temp;
 }
 
+/**
+ * @brief Reverses the elements of an array.
+ *
+ * function serves as a wrapper for the recursive reverse_array function,
+ * initiating the reversal process from the first element.
+ *
+ * @param array Pointer to the array to be reversed.
+ * @param size Total size of the array.
+ */
 void reverse_array(int *array, int size)
 {
     reverse_array(array, 0, size);
