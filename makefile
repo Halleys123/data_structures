@@ -25,19 +25,23 @@ f7 = is_palindrome.cpp
 
 # files in multiple_recursion folder
 s1 = fibonacci.cpp
+s2 = print_subsequence.cpp
 
 # File paths list
 files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3) $(r_f)/$(f4) $(r_f)/$(f5) $(r_f)/$(f6) $(r_f)/$(f7)
 
 # adding more files to the list
-files += $(mr_f)/$(s1)
+files += $(mr_f)/$(s1) $(mr_f)/$(s2)
 
 # commands
 main: 
-	g++ main.cpp $(files) -o main.exe -I$(r_f) -L./lib -lsign
+	g++ main.cpp $(files) -o main.exe -I$(r_f) -L./lib -lsign -lordinalnum
 
 # building static libary from source/other/sign.cpp and sign.h
-build:
+build_sign:
 	g++ -c ./source/other/sign.cpp -o ./source/other/sign.o
 	ar rcs ./lib/libsign.a ./source/other/sign.o
+build_ordinal_number:
+	g++ -c ./source/other/ordinal_number.cpp -o ./source/other/ordinal_number.o
+	ar rcs ./lib/libordinalnum.a ./source/other/ordinal_number.o
 	

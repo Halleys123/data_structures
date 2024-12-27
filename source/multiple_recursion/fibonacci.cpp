@@ -3,6 +3,8 @@
 /**
  * @brief The function is used to calculate nth fibonacci number with recursion.
  *
+ * @paragraph This function is a functional recursive function.
+ *
  * @param n Position of number that you want to find.
  * @return returns the nth fibonacci number.
  */
