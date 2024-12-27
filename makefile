@@ -16,11 +16,11 @@ r_f = ./source/recursion
 # Files
 f0 = main.cpp
 f1 = print_name_5_times.cpp
-f2 = print_linearly_1_to_N.cpp
-f3 = print_to_one.cpp
+# f2 = print_linearly_1_to_N.cpp
+f2 = print_to.cpp
 
 # File paths list
-files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3)
+files = $(r_f)/$(f1) $(r_f)/$(f2)
 
 # commands
 main: 
