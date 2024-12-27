@@ -25,3 +25,9 @@
 Stack overflow occurs when the stack is full and there is no space to store the function call.
 
 ![Stack Overflow](./images/stack_overflow_light.svg)
+
+## Parameterised and Functional Recursion
+
+- **Parameterised Recursion**: The function takes one or more parameters. The parameters are used to calculate the answer.
+
+- **Functional Recursion**: The function does not take any parameters. The function itself returns the answer.
