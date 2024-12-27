@@ -10,6 +10,18 @@
 
 # To compile the main file, use the following command:
 
-main:
-	g++ main.cpp ./source/recursion/print_name_5_times.cpp -o main.exe -I./source/recursion
-	
+# Variable for source/recursion
+r_f = ./source/recursion
+
+# Files
+f0 = main.cpp
+f1 = print_name_5_times.cpp
+f2 = print_linearly_1_to_N.cpp
+f3 = print_to_one.cpp
+
+# File paths list
+files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3)
+
+# commands
+main: 
+	g++ main.cpp $(files) -o main.exe -I$(r_f)
