@@ -48,3 +48,14 @@ bool is_palindrome(std::string str, int i)
 }
 
 ```
+
+## Multiple Recursion Calls
+
+- When a function calls itself more than once, it is called multiple recursion.
+
+```cpp
+void sample() {
+    sample();
+    sample();
+}
+```

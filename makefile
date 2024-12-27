@@ -12,9 +12,9 @@
 
 # Variable for source/recursion
 r_f = ./source/recursion
+mr_f = ./source/multiple_recursion
 
-# Files
-f0 = main.cpp
+# Files in recursion folder
 f1 = print_name_5_times.cpp
 f2 = print_to.cpp
 f3 = print_to_backtrack.cpp
@@ -23,8 +23,14 @@ f5 = factorial.cpp
 f6 = reverse_array.cpp
 f7 = is_palindrome.cpp
 
+# files in multiple_recursion folder
+s1 = fibonacci.cpp
+
 # File paths list
 files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3) $(r_f)/$(f4) $(r_f)/$(f5) $(r_f)/$(f6) $(r_f)/$(f7)
+
+# adding more files to the list
+files += $(mr_f)/$(s1)
 
 # commands
 main: 
