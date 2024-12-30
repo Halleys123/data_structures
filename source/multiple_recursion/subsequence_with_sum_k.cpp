@@ -12,7 +12,7 @@ using namespace std;
  * @param cur Pointer to the current subsequence being formed.
  * @param pos Current position in the subsequence.
  * @param required_sum The sum that each subsequence should add up to.
- * @param current_sum The current sum of the subsequence being formed.
+ * @param current_sum The current sum of the sufbsequence being formed.
  *
  * @return The total number of subsequence with given sum.
  */

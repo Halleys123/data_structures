@@ -13,6 +13,7 @@
 #include "source/multiple_recursion/fibonacci.h"
 #include "source/multiple_recursion/print_subsequence.h"
 #include "source/multiple_recursion/subsequence_with_sum_k.h"
+#include "source/multiple_recursion/mergeSort.h"
 
 using namespace std;
 
@@ -35,11 +36,33 @@ int main()
 
     int size = 5;
     int *array = new int[size];
+    int *nonSortedArray = new int[5];
+
     array[0] = 1;
     array[1] = 2;
     array[2] = 3;
     array[3] = 4;
     array[4] = 5;
+
+    nonSortedArray[0] = 5;
+    nonSortedArray[1] = -1;
+    nonSortedArray[2] = 4;
+    nonSortedArray[3] = 2;
+    nonSortedArray[4] = 10;
+
+    cout << "-----------Sorted Array-------------" << endl;
+    for (int i = 0; i < 5; i++)
+    {
+        cout << nonSortedArray[i] << " ";
+    }
+    cout << endl;
+    mergeSort(nonSortedArray, 5);
+    for (int i = 0; i < 5; i++)
+    {
+        cout << nonSortedArray[i] << " ";
+    }
+    cout << endl;
+    cout << "---------------------------------" << endl;
 
     // cout << "Subsequence of above array" << endl;
     // print_subsequence(array, size);

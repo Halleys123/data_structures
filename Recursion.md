@@ -59,3 +59,16 @@ void sample() {
     sample();
 }
 ```
+
+# Merge Sort Algorithm
+
+- This algorithm uses the concept of recursion.
+- It is a divide and conquer algorithm.
+- It divides the array into two halves, sorts them, and then merges them.
+- it works on principal that any two sorted array will always have smallest/largest element at the start of the array (based on sorting order). So, we can compare the first element of both the arrays and put the smaller one in the resultant array.
+
+## Steps of Merge Sort
+
+1. **Divide**: Divide the array into two halves.
+2. **Conquer**: Recursively sort the two halves.
+3. **Merge**: Merge the two sorted halves.
