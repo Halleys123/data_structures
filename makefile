@@ -28,12 +28,13 @@ s1 = fibonacci.cpp
 s2 = print_subsequence.cpp
 s3 = subsequence_with_sum_k.cpp
 s4 = mergeSort.cpp
+s5 = quick_sort.cpp
 
 # File paths list
 files = $(r_f)/$(f1) $(r_f)/$(f2) $(r_f)/$(f3) $(r_f)/$(f4) $(r_f)/$(f5) $(r_f)/$(f6) $(r_f)/$(f7)
 
 # adding more files to the list
-files += $(mr_f)/$(s1) $(mr_f)/$(s2) $(mr_f)/$(s3) $(mr_f)/$(s4)
+files += $(mr_f)/$(s1) $(mr_f)/$(s2) $(mr_f)/$(s3) $(mr_f)/$(s4) $(mr_f)/$(s5)
 
 # commands
 main: 

@@ -14,6 +14,7 @@
 #include "source/multiple_recursion/print_subsequence.h"
 #include "source/multiple_recursion/subsequence_with_sum_k.h"
 #include "source/multiple_recursion/mergeSort.h"
+#include "source/multiple_recursion/quick_sort.h"
 
 using namespace std;
 
@@ -50,7 +51,7 @@ int main()
     nonSortedArray[3] = 2;
     nonSortedArray[4] = 10;
 
-    cout << "-----------Sorted Array-------------" << endl;
+    cout << "-----------Sorted Array Merge Sort-------------" << endl;
     for (int i = 0; i < 5; i++)
     {
         cout << nonSortedArray[i] << " ";
@@ -60,6 +61,31 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         cout << nonSortedArray[i] << " ";
+    }
+    cout << endl;
+    cout << "---------------------------------" << endl;
+
+    cout << endl;
+    int *quick_sort_sample_array = new int[8];
+    quick_sort_sample_array[0] = 4;
+    quick_sort_sample_array[1] = 6;
+    quick_sort_sample_array[2] = 2;
+    quick_sort_sample_array[3] = 5;
+    quick_sort_sample_array[4] = 7;
+    quick_sort_sample_array[5] = 9;
+    quick_sort_sample_array[6] = 1;
+    quick_sort_sample_array[7] = 3;
+
+    cout << "-----------Sorted Array Quick Sort-------------" << endl;
+    for (int i = 0; i < 8; i++)
+    {
+        cout << quick_sort_sample_array[i] << " ";
+    }
+    quick_sort(quick_sort_sample_array, 8);
+    cout << endl;
+    for (int i = 0; i < 8; i++)
+    {
+        cout << quick_sort_sample_array[i] << " ";
     }
     cout << endl;
     cout << "---------------------------------" << endl;
