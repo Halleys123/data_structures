@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void sumFunc(int i, int target, vector<int> &candidates, vector<vector<int>> &ans, vector<int> &temp)
+void findCombinations(int i, int target, vector<int> &candidates, vector<vector<int>> &ans, vector<int> &temp)
 {
     if (i >= candidates.size())
         return;
@@ -22,16 +22,16 @@ void sumFunc(int i, int target, vector<int> &candidates, vector<vector<int>> &an
         return;
     }
     temp.push_back(candidates[i]);
-    sumFunc(i, target - candidates[i], candidates, ans, temp);
+    findCombinations(i, target - candidates[i], candidates, ans, temp);
     temp.pop_back();
-    sumFunc(i + 1, target, candidates, ans, temp);
+    findCombinations(i + 1, target, candidates, ans, temp);
 }
 vector<vector<int>> combinationSum(vector<int> &candidates, int target)
 {
     vector<vector<int>> ans;
     vector<int> temp;
 
-    sumFunc(0, target, candidates, ans, temp);
+    findCombinations(0, target, candidates, ans, temp);
     return ans;
 }
 
